@@ -5,7 +5,6 @@ let str = "";
 let arr = Array.from(val_btn);
 arr.forEach((item) => {
   item.addEventListener("click", function (e) {
-    console.log('hi');
     if (e.target.value == '=') {
       str = eval(str);
       display_btn.value = str;
@@ -14,7 +13,7 @@ arr.forEach((item) => {
       display_btn.value = str;
     } else if (e.target.value == 'AC') {
       str = " ";
-      display_btn.value = str;
+      display_btn.value = '0';
     } else {
       str += e.target.value;
       display_btn.value = str;

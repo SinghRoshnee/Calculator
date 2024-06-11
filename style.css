@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #ecf0f3;
+  background: linear-gradient(45deg, #334, #778);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,51 +13,67 @@ body {
 }
 
 .container {
-  background-color: #ecf0f3;
+  background: linear-gradient(45deg, #112, #556);
   height: 450px;
   width: 320px;
   border-radius: 16px;
-  box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  box-shadow: 5px -5px 10px #fff6, -3px 3px 13px #000;
+  border: 1px solid #535456;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uppercontent {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .uppercontent input {
-  width: 15vw;
-  height: 7vh;
-  margin: 30px 20px;
+  margin: 25px 20px;
   border: none;
   outline: none;
   border-radius: 10px;
-  color: black;
+  color: #fff;
   font-size: 20px;
-  text-align: center;
-  background-color: #ecf0f3;
-  box-shadow: inset -5px -5px 12px #ffffff,
-              inset 5px 5px 15px rgba(0, 0, 0, .16);
+  text-align: start;
+  padding: 16px;
+  background: transparent;
+  box-shadow: -2px 2px 5px #000 inset, 2px -2px 5px #fff6 inset;
+  width: calc(100% - 90px);
 }
 
 input::placeholder {
-  color: rgba(0, 0, 0, 0.578);
+  color: white;
   font-size: 20px;
-  text-align: center;
+  text-align: start;
+  padding: 10px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 input[type="button"] {
   height: 3rem;
   width: 3rem;
-  padding-block: 20px;
-  margin-block: 8px;
-  margin-inline: 7px;
+  margin: 8px 12px;
   border: none;
   outline: none;
-  background-color: #ecf0f3;
-  box-shadow:  -5px -5px 12px #ffffff,
-               5px 5px 15px rgba(0, 0, 0, .16);
+  background: transparent;
+  box-shadow: -2px 2px 5px #000, 2px -2px 5px #fff6;
   font-size: 15px;
   border-radius: 15px;
-  color: rgb(33, 29, 29);
+  color: #fff;
   font-weight: 500;
 }
-
-
